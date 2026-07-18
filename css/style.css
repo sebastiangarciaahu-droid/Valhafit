@@ -1,0 +1,394 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    background:#050505;
+
+    font-family:Arial;
+
+}
+
+.container{
+
+    display:flex;
+
+    height:100vh;
+
+}
+
+/* ======================= */
+
+.main{
+
+    padding:5px;
+
+    width:735px;
+
+    margin-left:15px;
+
+}
+
+/* ======================= */
+
+.profile-card{
+
+    height:194px;
+
+    background:#181818;
+
+    border-radius:10px;
+
+    margin-bottom:8px;
+    
+    margin-top:41px;
+
+}
+
+.mission-card{
+
+    height:194px;
+
+    background:#181818;
+
+    border-radius:10px;
+
+    margin-bottom:8px;
+
+}
+
+.quick-access{
+
+    height:80px;
+
+    background:#181818;
+
+    border-radius:10px;
+
+    margin-bottom:8px;
+
+}
+
+.rank-card{
+
+    height:80px;
+
+    background:#181818;
+
+    border-radius:10px;
+
+}
+
+/* ======================= */
+
+.right-panel{
+
+    width:375px;
+
+    padding:5px;
+
+    margin-top:41px;
+
+     margin-right:13px;
+
+}
+
+.progress-card{
+
+    height:154px;
+
+    background:#181818;
+    
+    border-radius:10px;
+
+    margin-bottom:8px;
+
+}
+
+.training-card{
+
+    height:130px;
+
+    background:#181818;
+
+    border-radius:10px;
+
+    margin-bottom:8px;
+
+}
+
+.calendar-card{
+
+    height:184px;
+
+    background:#181818;
+
+    border-radius:10px;
+
+    margin-bottom:8px;
+
+}
+
+.achievements-card{
+
+    height:80px;
+
+    background:#181818;
+
+    border-radius:10px;
+
+}
+
+/* ======================= */
+/* SIDEBAR */
+/* ======================= */
+
+.sidebar{
+
+    width:228px;
+
+    background:#080808;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:20px;
+
+}
+
+.sidebar a img{
+
+    margin-right:9px;
+
+    transition:.25s;
+
+}
+
+.sidebar a:hover img{
+
+    transform:scale(1.15);
+
+}
+
+.logo{
+    
+
+    color:white;
+
+    font-size:32px;
+
+    text-align:center;
+
+    margin-bottom:50px;
+
+    margin-top:10px;
+
+    letter-spacing:4px;
+
+}
+
+.logo2{
+    margin-top: 7px;
+}
+
+.sidebar nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:0px;
+
+}
+
+.sidebar a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+    color:#cfcfcf;
+
+    padding:8px 10px;
+
+    border-radius:10x;
+
+    transition:all .25s ease;
+
+    position:relative;
+
+}
+
+.sidebar a:hover{
+
+    background:#151515;
+
+    color:white;
+
+    transform:translateX(8px);
+
+}
+
+.sidebar a::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:-10px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:0;
+
+    height:70%;
+
+    background:#d8b46b;
+
+    border-radius:20px;
+
+    transition:.25s;
+
+}
+
+.sidebar a:hover::before{
+
+    width:4px;
+
+}
+
+.sidebar .active{
+
+    background:#3b2a12;
+
+    color:#d8b46b;
+
+}
+
+
+.calendar-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:12px 14px 8px 14px;
+
+}
+
+
+.calendar-title{
+
+    color:#ffffff;
+
+    font-size:14px;
+
+    font-weight:500;
+
+}
+
+.month-controls{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+#monthYear{
+
+    color:rgb(255, 255, 255);
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+.calendar-header button{
+
+    background:none;
+
+    border:none;
+
+    color:#d8b46b;
+
+    font-size:10px;
+
+    cursor:pointer;
+
+}
+
+.weekdays{
+
+    display:grid;
+
+    grid-template-columns:repeat(7,1fr);
+
+    text-align:center;
+
+    color:#888;
+
+    font-size:12px;
+
+    padding:0 10px;
+
+}
+
+#calendarDays{
+
+    display:grid;
+
+    grid-template-columns:repeat(7,1fr);
+
+    gap:4px;
+
+    padding:10px;
+
+}
+
+.day{
+
+    text-align:center;
+
+    color:white;
+
+    padding:2px;
+
+    font-size:11px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+
+}
+
+.day:hover{
+
+    background:#2a2a2a;
+
+}
+
+.today{
+
+    background:#d8b46b;
+
+    color:black;
+
+    font-weight:bold;
+
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ValhaFit</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+
+        <aside class="sidebar">
+
+            <img src="assets/Marca.png" width="180" height="180">
+
+            <nav>
+
+                <a href="#">
+                    
+                    <img src="assets/inicio.png" alt="INICIO" width="20" height="20">
+
+                    INICIO
+                
+                </a>
+
+                <a href="#">
+
+                    <img src="assets/pesa.png" alt="RUTINA" width="20" height="14">
+
+                    RUTINA
+
+                </a>
+
+                <a href="#">
+                    
+                    <img src="assets/progreso.png" alt="PROGRESO" width="21" height="15">
+
+                    PROGRESO
+                
+                </a>
+
+                <a href="#">
+                    
+                    <img src="assets/IA coach.png" alt="IA COACH" width="22" height="20">
+
+                    IA COACH
+                
+                </a>
+
+                <a href="#">
+                    
+                    <img src="assets/nutricion.png" alt="NUTRICIÓN" width="23" height="18">
+
+                    NUTRICIÓN
+                
+                </a>
+
+                <a href="#">
+                    
+                    <img src="assets/Ejercicios.png" alt="EJERCICIOS" width="23" height="18">
+
+                    EJERCICIOS
+                
+                </a>
+
+                <a href="#">
+                    
+                    <img src="assets/Clan.png" alt="CLAN" width="22" height="24">
+
+                    CLAN
+                
+                </a>
+
+                <a href="#">
+                    
+                    <img src="assets/Logros.png" alt="LOGROS" width="22" height="24">
+
+                    LOGROS
+                
+                </a>
+
+                <a href="tienda.html">
+                    
+                    <img src="assets/Compras.png" alt="TIENDA" width="22" height="24">
+
+                    TIENDA
+                
+                </a>
+
+            </nav>
+
+            <div class="logo2">
+
+                <img src="assets/logo.png" alt="logo2" width="192" height="203">
+
+            </div>
+
+        </aside>
+
+        <!-- Contenido principal -->
+
+        <main class="main">
+
+            <div class="profile-card"></div>
+
+            <div class="mission-card"></div>
+
+            <div class="quick-access"></div>
+
+            <div class="rank-card"></div>
+
+        </main>
+
+        <!-- Panel derecho -->
+
+        <aside class="right-panel">
+
+            <div class="progress-card"></div>
+
+            <div class="training-card"></div>
+
+            <div class="calendar-card">
+
+            <div class="calendar-header">
+
+                    <span class="calendar-title">
+
+                        Calendario
+
+                    </span>
+
+                    <div class="month-controls">
+
+                        <button id="prevMonth">◀</button>
+
+                        <h3 id="monthYear"></h3>
+
+                        <button id="nextMonth">▶</button>
+
+                    </div>
+
+                </div>
+
+                        <div class="weekdays">
+
+                            <div>L</div>
+                            <div>M</div>
+                            <div>M</div>
+                            <div>J</div>
+                            <div>V</div>
+                            <div>S</div>
+                            <div>D</div>
+
+                        </div>
+
+                        <div id="calendarDays"></div>
+
+                    </div>
+
+                    <div class="achievements-card"></div>
+
+                </aside>
+
+            </div>
+
+    <audio id="hoverSound" src="assets/Sounds/cambio de opcion.mp3"></audio>
+
+    <script>
+
+        const hoverSound = document.getElementById("hoverSound");
+
+        const menuItems = document.querySelectorAll(".sidebar a");
+
+        menuItems.forEach(item => {
+
+            item.addEventListener("mouseenter", () => {
+
+                hoverSound.currentTime = 0;
+
+                hoverSound.play();
+
+            });
+
+        });
+
+    </script>
+
+    <script src="js/calendar.js"></script>
+
+</body>
+
+</html>
